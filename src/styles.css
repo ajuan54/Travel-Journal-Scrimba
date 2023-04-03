@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.hero {
+  background-color: #f55a5a;
+  height: 55px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.hero--photo {
+  align-self: center;
+  justify-content: center;
+  padding: 7px;
+}
+.hero--header {
+  margin: auto 0;
+}
+.entry {
+  display: flex;
+  flex-direction: row;
+}
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0.5em;
+  align-items: center;
+}
+.entry--info {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.entry--image {
+  height: 100%;
+  width: 18em;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0.3em;
+}
+.entry--pin {
+  height: 10px;
+  padding-right: 4px;
+}
+.entry--location {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.gray {
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-decoration-line: underline;
+  color: #918e9b;
+  padding-left: 11px;
+}
+.entry--title {
+  font-size: 1.5rem;
+  margin: 0.25em 0;
+  font-weight: 700;
+}
+
+.entry--dates {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.entry--description {
+  max-width: 50rem;
+  margin-top: 2em;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 150%;
+}
+
+@media (max-width: 768px) {
+  .entry {
+    flex-direction: column;
+    align-items: center;
+  }
+}
